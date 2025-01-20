@@ -7,16 +7,16 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">{{ __('messages.navbar.create') }}</a>
+                    <a class="nav-link" href="{{ route('app.pet.create') }}">{{ __('messages.navbar.create') }}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">{{ __('messages.navbar.get') }}</a>
+                    <a class="nav-link" href="{{ route('app.pet.get') }}">{{ __('messages.navbar.get') }}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">{{ __('messages.navbar.update') }}</a>
+                    <a class="nav-link" href="{{ route('app.pet.update') }}">{{ __('messages.navbar.update') }}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">{{ __('messages.navbar.delete') }}</a>
+                    <a class="nav-link" href="{{ route('app.pet.delete') }}">{{ __('messages.navbar.delete') }}</a>
                 </li>
             </ul>
         </div>
