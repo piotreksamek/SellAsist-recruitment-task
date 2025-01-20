@@ -9,10 +9,6 @@ RUN apt-get update && apt-get install -y libicu-dev git libzip-dev zip libpng-de
 
 COPY --from=composer/composer:2.5.4 /usr/bin/composer /usr/bin/composer
 
-#RUN composer global require "laravel/installer"
-
-#ENV PATH="/root/.composer/vendor/bin:$PATH"
-
 RUN usermod -u 1000 www-data
 
 USER www-data
