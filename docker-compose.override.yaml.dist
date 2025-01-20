@@ -1,0 +1,4 @@
+services:
+  sellasist-nginx:
+    ports:
+      - "8080:80"
