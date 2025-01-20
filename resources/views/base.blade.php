@@ -9,6 +9,12 @@
 <body>
 <x-navbar></x-navbar>
 <div class="container mt-5">
+    @if(session('success'))
+        <div class="alert alert-success">{{ session('success') }}</div>
+    @endif
+    @if(session('warning'))
+        <div class="alert alert-warning">{{ session('warning') }}</div>
+    @endif
     @yield('content')
 </div>
 </body>
